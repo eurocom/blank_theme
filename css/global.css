@@ -1,0 +1,721 @@
+@import url(reset.css);
+
+
+/* ##################################################################################################
+	PRESTASHOP CSS
+################################################################################################## */
+
+.clearfix:before,.clearfix:after {
+content:".";
+display:block;
+height:0;
+overflow:hidden;
+	}
+
+.clearfix:after {
+clear:both;
+	}
+
+.clearfix {
+zoom:1;
+	}
+
+/* ************************************************************************************************
+		generic style
+************************************************************************************************ */
+body {}
+
+/* positionnement ****************************************************************************** */
+.hidden {display:none;}
+.f_right {float:right;}
+p.center {text-align:center;}
+.clearBoth {clear:both;
+}
+
+/* title *************************************************************************************** */
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+.hide-left-column #left_column {}
+.hide-left-column #center_column {}
+
+/* text **************************************************************************************** */
+p {}
+p em {}
+.warning {}
+.success {}
+.error {}
+.error ol {}
+.error p.lnk {}
+.required {}
+
+/* link **************************************************************************************** */
+a,a:active,a:visited {}
+a:hover {}
+
+/*buttons ************************************************************************************** */
+input.button_mini,input.button_small,input.button,input.button_large,input.button_mini_disabled,input.button_small_disabled,input.button_disabled,input.button_large_disabled,input.exclusive_mini,input.exclusive_small,input.exclusive,input.exclusive_large,input.exclusive_mini_disabled,input.exclusive_small_disabled,input.exclusive_disabled,input.exclusive_large_disabled,a.button_mini,a.button_small,a.button,a.button_large,a.exclusive_mini,a.exclusive_small,a.exclusive,a.exclusive_large,span.button_mini,span.button_small,span.button,span.button_large,span.exclusive_mini,span.exclusive_small,span.exclusive,span.exclusive_large,span.exclusive_large_disabled {}
+:first-child+html input.button_mini,:first-child+html input.button_small,:first-child+html input.button,:first-child+html input.button_large,:first-child+html input.button_mini_disabled,:first-child+html input.button_small_disabled,:first-child+html input.button_disabled,:first-child+html input.button_large_disabled,:first-child+html input.exclusive_mini,:first-child+html input.exclusive_small,:first-child+html input.exclusive,:first-child+html input.exclusive_large,:first-child+html input.exclusive_mini_disabled,:first-child+html input.exclusive_small_disabled,:first-child+html input.exclusive_disabled,:first-child+html input.exclusive_large_disabled {}
+
+/* input button */
+input.button_mini,input.button_small,input.button,input.button_large,input.button_mini_disabled,input.button_small_disabled,input.button_disabled,input.button_large_disabled,input.exclusive_mini,input.exclusive_small,input.exclusive,input.exclusive_large,input.exclusive_mini_disabled,input.exclusive_small_disabled,input.exclusive_disabled,input.exclusive_large_disabled {}
+
+/* disabled button */
+input.button_mini_disabled,input.button_small_disabled,input.button_disabled,input.button_large_disabled,input.exclusive_mini_disabled,input.exclusive_small_disabled,input.exclusive_disabled,input.exclusive_large_disabled,span.button_mini,span.button_small,span.button,span.button_large,span.exclusive_mini,span.exclusive_small,span.exclusive,span.exclusive_large,span.exclusive_large_disabled {}
+
+/* exclusive button */
+input.exclusive_mini,input.exclusive_small,input.exclusive,input.exclusive_large,input.exclusive_mini_disabled,input.exclusive_small_disabled,input.exclusive_disabled,input.exclusive_large_disabled,a.exclusive_mini,a.exclusive_small,a.exclusive,a.exclusive_large,span.exclusive_mini,span.exclusive_small,span.exclusive,span.exclusive_large,span.exclusive_large_disabled {}
+
+/* exclusive disabled button */
+input.exclusive_mini_disabled,input.exclusive_small_disabled,input.exclusive_disabled,input.exclusive_large_disabled,span.exclusive_mini,span.exclusive_small,span.exclusive,span.exclusive_large {}
+
+/* hover button */
+input.button_mini:hover,input.button_small:hover,input.button:hover,input.button_large:hover,input.exclusive_mini:hover,input.exclusive_small:hover,input.exclusive:hover,input.exclusive_large:hover,a.button_mini:hover,a.button_small:hover,a.button:hover,a.button_large:hover,a.exclusive_mini:hover,a.exclusive_small:hover,a.exclusive:hover,a.exclusive_large:hover {}
+
+/* exclusive hover button */
+input.exclusive_mini:hover,input.exclusive_small:hover,input.exclusive:hover,input.exclusive_large:hover,a.exclusive_mini:hover,a.exclusive_small:hover,a.exclusive:hover,a.exclusive_large:hover {}
+
+/* active button */
+input.button_mini:active,input.button_small:active,input.button:active,input.button_large:active,input.exclusive_mini:active,input.exclusive_small:active,input.exclusive:active,input.exclusive_large:active,a.button_mini:active,a.button_small:active,a.button:active,a.button_large:active,a.exclusive_mini:active,a.exclusive_small:active,a.exclusive:active,a.exclusive_large:active {}
+
+/* classic buttons */
+input.button_mini,input.button_mini_disabled,input.exclusive_mini,input.exclusive_mini_disabled,a.button_mini,a.exclusive_mini,span.button_mini,span.exclusive_mini {}
+input.button_small,input.button_small_disabled,input.exclusive_small,input.exclusive_small_disabled,a.button_small,a.exclusive_small,span.button_small,span.exclusive_small {}
+input.button_disabled,input.exclusive_disabled,span.exclusive {}
+input.button_large,input.button_large_disabled,input.exclusive_large,input.exclusive_large_disabled,a.button_large,a.exclusive_large,span.button_large,span.exclusive_large,span.exclusive_large_disabled {}
+
+/* exclusive button */
+input.exclusive, input.exclusive_disabled, a.exclusive, span.exclusive {}
+input.exclusive_mini, input.exclusive_mini_disabled, a.exclusive_mini, span.exclusive_mini {}
+input.exclusive_small, input.exclusive_small_disabled, a.exclusive_small, span.exclusive_small {}
+input.exclusive_large, input.exclusive_large_disabled, a.exclusive_large, span.exclusive_large, span.exclusive_large_disabled {}
+/* form **************************************************************************************** */
+form.std fieldset {}
+
+/* table *************************************************************************************** */
+table.std,table.table_block {}
+table.std th,table.table_block th {}
+table.std tr.alternate_item,table.table_block tr.alternate_item {}
+table.std td,table.table_block td {}
+
+/* BLOCK .block ******************************************************************************** */
+.block {}
+#footer .block {}
+.block h4 {}
+.block h4 a {}
+.block ul {}
+.block li.last {}
+.block li a {}
+
+/* BLOCK .products_block *********************************************************************** */
+.products_block {}
+.products_block li {}
+.products_block li img {}
+
+/* BLOCK customer privacy ******************************************************************* */
+.account_creation label {}
+
+/* BLOCK .footer_links (cms pages) ************************************************************* */
+ul.footer_links {}
+ul.footer_links li {}
+ul.footer_links li.f_right {}
+ul.footer_links li .icon {}
+
+/* barre comparaison / tri ********************************************************************* */
+.content_sortPagiBar {}
+#center_column .sortPagiBar {}
+#center_column .sortPagiBar strong {}
+#center_column .sortPagiBar p {}
+#center_column .sortPagiBar form {}
+.sortPagiBar #productsSortForm {}
+.sortPagiBar select#selectPrductSort {}
+.sortPagiBar #bt_compare {}
+.sortPagiBar .nbrItemPage {}
+.sortPagiBar .PrductSort {}
+.sortPagiBar .nbrProduct {}
+.sortPagiBar #nb_item {}
+
+/* pagination ********************************************************************************** */
+form.pagination {}
+div.pagination {}
+ul.pagination {}
+ul.pagination li {}
+ul.pagination a,ul.pagination span {}
+ul.pagination a {}
+ul.pagination a:hover {}
+ul.pagination .current span {}
+ul.pagination li.disabled span {}
+#pagination_previous {}
+#pagination_next {}
+#pagination_previous a,#pagination_previous span,#pagination_next a,#pagination_next span {}
+#pagination_previous span,#pagination_next span {}
+
+/* CART steps *********************************************************************** */
+ul#order_step {}
+ul.step {}
+ul.step li {}
+ul.step li a,ul.step li.step_current span,ul.step li.step_current_end span {}
+ul.step li.step_current {}
+ul.step li.step_current_end {}
+ul.step li.step_todo span {}
+ul.step li.step_done {}
+ul.step li#step_end {}
+
+/* module productcomments ********************************************************************** */
+.rating {}
+.rating:after {}
+.cancel,.star {}
+.cancel,.cancel a {}
+.star,.star a {}
+.cancel a,.star a {}
+div.star_on a {}
+div.star_hover a,div.star a:hover {}
+.pack_content {}
+.pack_price {}
+.confirmation {}
+#page .rte {}
+.listcomment {}
+.listcomment li {}
+.listcomment .titlecomment {}
+.listcomment .txtcomment {}
+.listcomment .authorcomment {}
+
+/* ************************************************************************************************
+		HEADER
+************************************************************************************************ */
+#header {}
+#header_logo {}
+#header_right {}
+
+/* ************************************************************************************************
+		BREADCRUMB
+************************************************************************************************ */
+.breadcrumb {}
+.breadcrumb .navigation-pipe {}
+.breadcrumb img {}
+
+/* ************************************************************************************************
+		FOOTER
+************************************************************************************************ */
+#footer {}
+.blockcategories_footer,#footer .myaccount,#block_various_links_footer,#social_block,#block_contact_infos {}
+.blockcategories_footer {}
+#footer h4 {}
+#footer h4,#footer h4 a {}
+#footer a {}
+#footer a:hover {}
+#footer ul {}
+#footer li {}
+#footer li a {}
+#footer .myaccount {}
+#footer .myaccount h4 {}
+#footer .myaccount .favoriteproducts img,#footer .myaccount .lnk_wishlist img {}
+
+/* ************************************************************************************************
+		PRODUCT PAGE
+************************************************************************************************ */
+/* BLOCK idTabs ******************************************************************************** */
+.idTabs {}
+ul.idTabs li {}
+.idTabs a {}
+.idTabs .selected {}
+#more_info_sheets {}
+#more_info_sheets ul,#more_info_sheets ol,#more_info_sheets dl {}
+#more_info_sheets em {}
+#more_info_sheets .product_desc {}
+#more_info_sheets .product_desc .product_image {}
+#more_info_sheets .product_desc .block_description {}
+#more_info_sheets .product_desc .clear_product_desc {}
+
+/* Make sure lists are correctly displayed in tinyMCE BO edition mode too */
+#short_description_content ul,#short_description_content ol,#short_description_content dl,#tinymce ul,#tinymce ol,#tinymce dl {}
+.block_hidden_only_for_screen {}
+
+/* ************************************************************************************************
+		PAGE AUTHENTIFICATION
+************************************************************************************************ */
+#authentication #left_column {}
+#authentication #center_column {}
+
+/* ************************************************************************************************
+		PAIMENT - PAGE ORDER
+************************************************************************************************ */
+/* nav bottom ********************************************************************************** */
+#order #left_column,#order-confirmation #left_column {}
+#order #center_column,#order-confirmation #center_column {}
+.cart_navigation {}
+.cart_navigation .exclusive,.cart_navigation .exclusive_large {}
+.cart_navigation .button,.cart_navigation .button_large {}
+
+/* step 1 - cart ******************************************************************************* */
+.cart_last_product {}
+p.cart_navigation .multishipping-button { margin-right: 10px }
+#order-detail-content {}
+table#cart_summary th {}
+table#cart_summary th.cart_product {}
+table#cart_summary td {}
+table#cart_summary td.cart_delete,table#cart_summary td.price_discount_del {}
+table#cart_summary .last_item td {}
+table#cart_summary tr.cart_item.odd,table#cart_summary tr.cart_total_delivery,table#cart_summary tr.cart_total_price,table#cart_summary tr.cart_total_voucher {}
+table#cart_summary tr.cart_item.even {}
+table#cart_summary tr.customization.odd {}
+table#cart_summary tr.customization.even {}
+table#cart_summary tr ul {}
+table#cart_summary .cart_product {}
+table#cart_summary tbody tr:last-child td {}
+table#cart_summary .cart_product img {}
+table#cart_summary .cart_description {}
+table#cart_summary .cart_unit {}
+table#cart_summary td.cart_unit {}
+table#cart_summary .cart_quantity {}
+table#cart_summary .customization .cart_quantity {}
+.cart_quantity .cart_quantity_input {}
+.cart_quantity .cart_quantity_button {}
+table#cart_summary .cart_total {}
+table#cart_summary td.cart_total {}
+table#cart_summary .cart_delete {}
+table#cart_summary .cart_discount_price {}
+.cart_delete a.cart_quantity_delete,a.price_discount_delete {}
+.cart_total_price .total_price_container {}
+table#cart_summary .cart_total_price td.cart_voucher {}
+table#cart_summary #total_price_container {}
+.cart_voucher h4,.cart_voucher p {}
+.cart_voucher h4 {}
+.cart_voucher p {}
+.cart_voucher #display_cart_vouchers {}
+.cart_voucher #display_cart_vouchers .title_offers {}
+.cart_voucher #display_cart_vouchers span {}
+.cart_voucher input.discount_name {}
+.cart_voucher .submit input.button {}
+#cart_summary .price {}
+.total_price_container p {}
+table#cart_summary .cart_total_price .total_price_container {}
+.cart_total_price .total_price_container p {}
+.cart_total_price .total_price_container span {}
+#order_carrier {}
+#order_carrier h4 {}
+#order_carrier span {}
+.order_delivery .first_item {}
+.multishipping_close_container {}
+table#cart_summary .gift-icon {}
+
+/* step 2 - authentification ******************************************************************* */
+#create-account_form,#authentication #login_form {}
+#create-account_form {}
+#authentication #create-account_form fieldset,#authentication #login_form fieldset {}
+#authentication #create-account_form .form_content,#authentication #login_form .form_content {}
+#create-account_form h3,#authentication #login_form h3 {}
+#create-account_form h4 {}
+#create-account_form label,#login_form label {}
+#order-opc #login_form_content label {}
+#create-account_form #email_create,#login_form #email,#login_form #passwd,#login_form #login_email,#login_form #login_passwd {}
+#create-account_form #SubmitCreate,#login_form #SubmitLogin {}
+.lost_password {}
+.lost_password a {}
+#order-opc .lost_password {}
+#ordermsg p {}
+#ordermsg p.txt {}
+#ordermsg .textarea {}
+#ordermsg .textarea textarea {}
+
+/* step 3 - address ************************************************************************** */
+.address-form-multishipping {}
+#multishipping_mode_box {}
+#multishipping_mode_checkbox {}
+#multishipping_mode_box.on {}
+#multishipping_mode_box .title {}
+#multishipping_mode_box .description,#multishipping_mode_box .description_off {}
+#multishipping_mode_box .description_off {}
+#multishipping_mode_box .description_off div {}
+#multishipping_mode_box .description_off a,#multishipping_mode_box .description a {}
+#multishipping_mode_box .description_off a:hover,#multishipping_mode_box .description a:hover {}
+#multishipping_mode_box.on .description_off {}
+
+/* step 4 - paiement ************************************************************************** */
+.delivery_options {}
+#order .delivery_options_address h3,#order-opc .delivery_options_address h3 {}
+#order .delivery_option_radio,#order-opc .delivery_option_radio {}
+#order .delivery_option label,#order-opc .delivery_option label {}
+#order .delivery_option label > table.resume,#order-opc .delivery_option label > table.resume {}
+#order .delivery_option.item,#order-opc .delivery_option.item {}
+#order .delivery_option.alternate_item,#order-opc .delivery_option.alternate_item {}
+#order .delivery_option label > table.resume td,#order-opc .delivery_option label > table.resume td {}
+#order .delivery_option label > table.resume td + td,#order-opc .delivery_option label > table.resume td + td {}
+#order .delivery_option label > table.resume td + td + td,#order-opc .delivery_option label > table.resume td + td + td {}
+#order .delivery_option_carrier td {}
+#order .delivery_option_carrier td + td {}
+#order .delivery_option_carrier td + td + td {}
+#order .delivery_options_address .delivery_option_logo,#order .delivery_option_carrier .delivery_option_logo,#order-opc .delivery_options_address .delivery_option_logo {}
+#order .delivery_options_address .delivery_option_logo img,#order-opc .delivery_options_address .delivery_option_logo img {}
+#order .delivery_option_carrier .first_item,#order-opc .delivery_option_carrier .first_item {}
+.order_carrier_content {}
+.order_carrier_content h3 {}
+.order_carrier_content h3.carrier_title {}
+.order_carrier_content input {}
+#carrierTable {}
+#carrierTable tbody {}
+#carrierTable th {}
+#carrierTable td {}
+#carrierTable td.carrier_price {}
+#gift_div {}
+#gift_div label {}
+#gift_div #gift_message {}
+a.iframe {}
+.hook_extracarrier {}
+
+/* step 5 - paiement ************************************************************************** */
+.paiement_block {}
+.payment_module {}
+.payment_module a {}
+.payment_module img {}
+.payment_module span {}
+.payment_module:before,.payment_module:after {}
+.payment_module:after {}
+.payment_module {}
+
+/* ************************************************************************************************
+		PAGE ORDER-OPC
+************************************************************************************************ */
+#order-opc #left_column {}
+#order-opc #center_column {}
+#order-opc h2 {}
+#order-opc h2 span {}
+#order-opc #login_form fieldset {}
+#order-opc #login_form fieldset p {}
+#order-opc #login_form fieldset p a {}
+#order-opc #new_account_form p.submit {}
+#order-opc #new_account_form p.opc-required {}
+#order-opc .addresses {}
+#order-opc #opc_delivery_methods h3 {}
+#order-opc #opc_delivery_methods textarea {}
+#order-opc #opc_payment_methods {}
+#order-opc #opc_payment_methods #opc_payment_methods-content p {}
+.delivery_option_carrier td {}
+.delivery_option_carrier td + td {}
+.delivery_option_carrier td + td + td {}
+.delivery_option_carrier {}
+.delivery_option_carrier tr td {}
+.delivery_option_carrier.selected {}
+.delivery_option_carrier.not-displayable {}
+.delivery_option_title {}
+
+/* ************************************************************************************************
+	express checkout
+************************************************************************************************ */
+#new_account_form {}
+#new_account_form h3 {}
+#center_column #new_account_form p {}
+#new_account_form p.required {}
+#new_account_form p.required sup {}
+#new_account_form p.radio span,#new_account_form p.text label,#new_account_form p.password label,#new_account_form p.select label,#new_account_form p.select span,#new_account_form p.textarea label {}
+#new_account_form p.radio label {}
+#new_account_form p.checkbox label {}
+#new_account_form p.text input,#new_account_form p.password input,#new_account_form p.select input {}
+#new_account_form p.checkbox input {}
+#new_account_form #submitGuestAccount {}
+
+/* ************************************************************************************************ */
+/* ************************************************************************************************
+		paiment - CONFIRMATION
+************************************************************************************************ */
+#orderconfirmation #left_column {}
+#orderconfirmation #center_column {}
+
+/* ************************************************************************************************
+		PAGE PASSWORD
+************************************************************************************************ */
+#form_forgotpassword fieldset {}
+
+#form_forgotpassword p.text label {}
+#form_forgotpassword p.text input {}
+#form_forgotpassword p.submit {}
+#password .icon {}
+
+/* ************************************************************************************************
+		PAGE ADRESSES
+************************************************************************************************ */
+#addresses #left_column {}
+#addresses #center_column {}
+#address p.inline-infos {}
+
+/* ************************************************************************************************
+		PAGE ADD ADRESS
+************************************************************************************************ */
+#address #left_column {}
+#address #center_column {}
+form#add_adress {}
+#add_adress fieldset {}
+#add_adress h3 {}
+#center_column #add_adress p {}
+#add_adress p.required {}
+#add_adress p.required sup {}
+#add_adress p.text label,#add_adress p.password label,#add_adress p.select label,#add_adress p.select span,#add_adress p.textarea label {}
+#add_adress p.text input,#add_adress p.password input,#add_adress p.select input {}
+#add_adress p.checkbox input {}
+#add_adress p.select select {}
+#add_adress p.textarea label {}
+#add_adress p.textarea textarea {}
+#center_column #add_adress p.submit2 {}
+#add_adress span.form_info,#add_adress span.inline-infos {}
+
+/* ************************************************************************************************
+		PAGE ORDER-SPLIP
+************************************************************************************************ */
+#order-slip #left_column {}
+#order-slip #center_column {}
+#order-slip #order-list {}
+#order-slip #order-list td {}
+#order-slip #order-list td.history_invoice {}
+
+/* ************************************************************************************************
+		PAGE DISCOUNT
+************************************************************************************************ */
+#discount #left_column {}
+#discount #center_column {}
+#discount .table_block tr.last_item td {}
+#discount .table_block td.discount_expiration_date {}
+#discount .table_block td.discount_value {}
+
+/* ************************************************************************************************
+		PAGE ORDER FOLLOW
+************************************************************************************************ */
+#order-follow #left_column {}
+
+#order-follow #center_column {}
+
+/* ************************************************************************************************
+		PAGE NEW-PRODUCTS
+************************************************************************************************ */
+#newproducts .sortPagiBar {}
+
+/* ************************************************************************************************
+		PAGE BEST SALES
+************************************************************************************************ */
+#bestsales .sortPagiBar {}
+
+/* ************************************************************************************************
+		PAGE PRICES DROP SALES
+************************************************************************************************ */
+#pricesdrop .sortPagiBar {}
+
+/* ************************************************************************************************
+		PAGE MANUFACTURER
+************************************************************************************************ */
+#manufacturer .nbrmanufacturer {}
+#manufacturer #product_list {}
+ul#manufacturers_list {}
+ul#manufacturers_list li {}
+ul#manufacturers_list li a.lnk_img {}
+ul#manufacturers_list li img {}
+ul#manufacturers_list li h3 {}
+ul#manufacturers_list li .description {}
+ul#manufacturers_list li .right_side {}
+.description_box {}
+.description_box p {}
+.description_box .hide_desc {}
+.description_box .lnk_more {}
+.description_box ul {}
+
+/* ************************************************************************************************
+		PAGE SUPPLIER
+************************************************************************************************ */
+#supplier .nbrmanufacturer {}
+ul#suppliers_list {}
+ul#suppliers_list li {}
+ul#suppliers_list li a.lnk_img {}
+ul#suppliers_list li img {}
+ul#suppliers_list li h3 {}
+ul#suppliers_list li .description {}
+ul#suppliers_list li .right_side {}
+
+/* ************************************************************************************************
+		PAGE SEARCH
+************************************************************************************************ */
+#search h3.nbresult {}
+#search .sortPagiBar {}
+
+/* ************************************************************************************************
+		PAGE 404
+************************************************************************************************ */
+#pagenotfound #left_column,#pagenotfound #right_column,#pagenotfound #footer {}
+#pagenotfound #left_column,#pagenotfound #right_column,#pagenotfound #footer {}
+#pagenotfound #center_column {}
+#pagenotfound .pagenotfound {}
+#pagenotfound h3 {}
+#pagenotfound fieldset {}
+#pagenotfound fieldset label {}
+#pagenotfound #search_query {}
+#pagenotfound .button_small {}
+#pagenotfound .pagenotfound a {}
+#pagenotfound .pagenotfound .icon {}
+
+/* ************************************************************************************************
+		addons payment cheque
+************************************************************************************************ */
+#module-cheque-payment #left_column {}
+#module-cheque-payment #center_column {}
+
+/* ************************************************************************************************
+		addons payment bankwire
+************************************************************************************************ */
+#module-bankwire-payment #left_column {}
+#module-bankwire-payment #center_column {}
+
+/* ************************************************************************************************
+		addons google checkout
+************************************************************************************************ */
+#module-gcheckout-payment #left_column {}
+#module-gcheckout-payment #center_column {}
+
+/* ************************************************************************************************
+		addons paypal
+************************************************************************************************ */
+#module-payment-submit #left_column {}
+#module-payment-submit #center_column {}
+
+/* ************************************************************************************************
+		addons cashondelivery validation
+************************************************************************************************ */
+#module-cashondelivery-validation #left_column {}
+#module-cashondelivery-validation #center_column {}
+
+/* ************************************************************************************************
+		addon RerversoForm
+************************************************************************************************ */
+#account-creation_form fieldset.reversoform {}
+#account-creation_form fieldset.reversoform .text label {}
+#account-creation_form fieldset.reversoform .infos-sup {}
+
+/* ************************************************************************************************
+		addon customer privacy
+************************************************************************************************ */
+#account-creation_form fieldset.customerprivacy label {}
+
+/* ************************************************************************************************
+		addon referralprogram
+************************************************************************************************ */
+#module-referralprogram-referralprogram-program #left_column {}
+#module-referralprogram-referralprogram-program #center_column {}
+#footer .myaccount li.referralprogram img {}
+#module-referralprogram-referralprogram-program .sheets {}
+#module-referralprogram-referralprogram-program form p.checkbox {}
+#module-referralprogram-referralprogram-program form p.checkbox a {}
+#module-referralprogram-referralprogram-program form p.submit {}
+#module-referralprogram-referralprogram-program form p.see_email {}
+#module-referralprogram-referralprogram-program form p.see_email a {}
+
+/* ************************************************************************************************
+		addon loyalty
+************************************************************************************************ */
+#module-loyalty-default #left_column {}
+#module-loyalty-default #center_column {}
+#product p#loyalty {}
+#footer .myaccount li.loyalty img {}
+/* ************************************************************************************************
+		addon Livezilla
+************************************************************************************************ */
+#livezilla_lnk {}
+#livezilla_lnk a {}
+#livezilla_lnk a:hover {}
+
+/* ************************************************************************************************
+		addons comments products
+************************************************************************************************ */
+form#sendComment fieldset {}
+form#sendComment h3 {}
+#new_comment_form p.text {}
+#sendComment p.text label,#sendComment p.textarea label {}
+#sendComment p.text input {}
+#sendComment p.textarea textarea {}
+#sendComment p.submit {}
+#sendComment p.closeform {}
+.star {}
+.star,.star a {}
+div.star_on a {}
+div.star_hover a,div.star a:hover {}
+
+/* ************************************************************************************************
+		guest tracking
+************************************************************************************************ */
+#guest-tracking fieldset p:first-child {}
+#guest-tracking fieldset p:last-child {}
+
+/* ************************************************************************************************
+		CSS Modules
+************************************************************************************************ */
+/******* IMPORTANT - Internet Explorer can read 31 CSS files max. Some CSS have been put here and erased from their own module folder.************/
+/*************** Block ADVERTISING ***************/
+.advertising_block {}
+
+/*************** Block CATEGORIES ***************/
+#categories_block_left li {}
+#categories_block_left li.last {}
+#categories_block_left li a {}
+#categories_block_left li ul {}
+#categories_block_left li ul li {}
+#categories_block_left li ul li a {}
+#categories_block_left li .OPEN,#categories_block_left li .CLOSE {}
+#categories_block_left li .CLOSE {}
+
+/* footer */
+.blockcategories_footer {}
+.blockcategories_footer ul ul {}
+
+/*************** Block CMS ***************/
+/* footer */
+#footer .block_various_links {}
+
+/* Block CMS links */
+.informations_block_left li {}
+.informations_block_left li.last {}
+.informations_block_left li a {}
+tr.subitem > td:first-child + td {}
+
+/*************** Block CONTACTINFOS ***************/
+#block_contact_infos {}
+#block_contact_infos li {}
+#block_contact_infos li strong {}
+#block_contact_infos li pre {}
+
+/*************** Block LINK ***************/
+#links_block_left .block_content li {}
+#links_block_left .block_contentt li.last {}
+#links_block_left .block_content li a {}
+
+/*************** Block MANUFACTURER ***************/
+.blockmanufacturer li {}
+.blockmanufacturer li.last {}
+.blockmanufacturer li a {}
+.blockmanufacturer form {}
+.blockmanufacturer p {}
+
+/*************** Block LOGO PAYMENT ***************/
+.paiement_logo_block {}
+.paiement_logo_block a {}
+.paiement_logo_block img {}
+
+/*************** Block RSS ***************/
+#rss_block_left p {}
+#rss_block_left li {}
+#rss_block_left li.last {}
+#rss_block_left li a {}
+
+/*************** Block SOCIAL ***************/
+#social_block {}
+#social_block li {}
+#social_block li.facebook {}
+#social_block li.twitter {}
+#social_block li.rss {}
+
+/*************** Block STORE ***************/
+.blockstore img {}
+.blockstore p {}
+.blockstore p.store_image {}
+
+/*************** Block SUPPLIER ***************/
+.blocksupplier li {}
+.blocksupplier li.last {}
+.blocksupplier li a {}
+.blocksupplier form {}
+.blocksupplier p {}
